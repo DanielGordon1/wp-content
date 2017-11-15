@@ -196,10 +196,9 @@ a img.aligncenter {
 
 /*Styling of images on home page.*/
 
-#home_images .about-galerry {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly
+#home-images img {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7)
 }
 .home-gallery .about-galerry img {
   display: flex;
