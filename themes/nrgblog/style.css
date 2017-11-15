@@ -197,8 +197,9 @@ a img.aligncenter {
 /*Styling of images on home page.*/
 
 #home-images img {
-  margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7)
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  max-height: 500px;
+  margin: 30px auto;
 }
 .home-gallery .about-galerry img {
   display: flex;
