@@ -225,3 +225,15 @@ a img.aligncenter {
   max-width: 100px !important;
   border-radius:50%;
 }
+
+/*Black and White image gallery*/
+#envira-gallery-wrap-816  {
+ display: block;
+ margin-top: -34px;
+}
+
+/*Color image gallery*/
+#envira-gallery-wrap-795  {
+  display: none;
+}
+

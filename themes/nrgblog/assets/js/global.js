@@ -5,7 +5,7 @@
 /* Version: 1.0 Initial Release*/
 /* Build Date: 22-04-2015*/
 /* Author: Unbranded*/
-/* Website: http://moonart.net.ua/site/ 
+/* Website: http://moonart.net.ua/site/
 /* Copyright: (C) 2015 */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -43,9 +43,9 @@
 	    var hash = $(this).attr('href');
 	    if ( hash != '' ) {
 	      	if ( $(hash).length ) {
-	        	$( 'body, html' ).stop().animate({'scrollTop' : $(hash).offset().top-200 },1000); 
+	        	$( 'body, html' ).stop().animate({'scrollTop' : $(hash).offset().top-200 },1000);
 	      	} else {
-	        	$( 'body, html' ).stop().animate({'scrollTop' : 0 }, 1000); 
+	        	$( 'body, html' ).stop().animate({'scrollTop' : 0 }, 1000);
 	      	}
 	      	return false;
 	    };
@@ -147,7 +147,7 @@
 		var bgSrc = $(this).attr('src');
 		$(this).parent().addClass('background-block').css({'background-image':'url('+bgSrc+')'});
 		$(this).hide();
-	});	
+	});
 
 	/*============================*/
 	/* 04 - function on page load */
@@ -161,7 +161,7 @@
 		headerPosition();
 		videoSize();
 	});
-	
+
 	$(window).load(function(){
 		menuArrows();
 		headerPosition();
@@ -178,7 +178,7 @@
 	});
 
 	function setBG(){
-		if( $(".blur-slider").length && winW > 992){ 
+		if( $(".blur-slider").length && winW > 992){
 			changeBG();
 		}
 	}
@@ -254,8 +254,8 @@
 	/*=====================*/
 	var initIterator = 0;
 	function initSwiper(){
-		$('.swiper-container:not(.initialized)').each(function(){							  
-			var $t = $(this);								  
+		$('.swiper-container:not(.initialized)').each(function(){
+			var $t = $(this);
 
 			var index = 'swiper-unique-id-'+initIterator;
 
@@ -276,7 +276,7 @@
 			var speedVar = parseInt($t.attr('data-speed'),10);
 
 			var slidesPerGroup = parseInt($t.attr('data-slides-per-group'),10);
-			if(!slidesPerGroup){slidesPerGroup=1;}			
+			if(!slidesPerGroup){slidesPerGroup=1;}
 
 			swipers['swiper-'+index] = new Swiper('.swiper-'+index,{
 				speed: speedVar,
@@ -287,7 +287,7 @@
 				slidesPerView: slidesPerViewVar,
 				slidesPerGroup: slidesPerGroup,
 				keyboardControl: true,
-				calculateHeight: true, 
+				calculateHeight: true,
 				simulateTouch: simVar,
 				centeredSlides: centerVar,
 				roundLengths: true,
@@ -295,7 +295,7 @@
 					var browserWidthResize = $(window).width();
 					if (browserWidthResize < 750) {
 							swiper.params.slidesPerGroup=1;
-					} else { 
+					} else {
                       swiper.params.slidesPerGroup=slidesPerGroup;
 					}
 				},
@@ -303,11 +303,11 @@
 					var browserWidthResize2 = $(window).width();
 					if (browserWidthResize2 < 750) {
 							swiper.params.slidesPerGroup=1;
-					} else { 
+					} else {
                       swiper.params.slidesPerGroup=slidesPerGroup;
 					  swiper.resizeFix(true);
-					}					
-				},									
+					}
+				},
 				onSlideChangeEnd: function(swiper){
 					var activeIndex = (loopVar===true)?swiper.activeLoopIndex:swiper.activeIndex;
 					var qVal = $t.find('.swiper-slide-active').attr('data-val');
@@ -422,17 +422,17 @@
 	$(".popup-bg").on("click",function(){
 		$(".popup").removeClass("opened");
 	}) ;
-	
+
 	$('nav > ul > li > a').on('click', 'span', function(){
 	    if ( $(this).parent().parent().find('.sub-menu').hasClass('slide') ) {
 		    $(this).parent().parent().find('.sub-menu').removeClass('slide');
 		} else {
-			$('.sub-menu').removeClass('slide');	
-			$(this).parent().parent().find('.sub-menu').addClass('slide');														 
+			$('.sub-menu').removeClass('slide');
+			$(this).parent().parent().find('.sub-menu').addClass('slide');
 		}
 		return false
 	});
-	
+
 	$('.subscribe-form').submit(function() {
 		var $this = $(this);
 		var url = $this.data('url');
@@ -476,5 +476,17 @@
 
 		return false;
 	});
-	
+
+	// Custom JS
+
+	$("#portfolio-switch").on("click", function(){
+		$("#envira-gallery-wrap-816").toggle('slow');
+		$("#envira-gallery-wrap-795").toggle('slow');
+		if ($("#portfolio-switch").value === "Color Photos") {
+			$("#portfolio-switch").value = "Black and White photos"
+		} else {
+			$("#portfolio-switch").value = "Color Photos"
+		}
+	});
+
 })(jQuery, window, document);
