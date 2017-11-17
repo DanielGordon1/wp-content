@@ -482,10 +482,10 @@
 	$("#portfolio-switch").on("click", function(){
 		$("#envira-gallery-wrap-816").toggle('slow');
 		$("#envira-gallery-wrap-795").toggle('slow');
-		if ($("#portfolio-switch").value === "Color Photos") {
-			$("#portfolio-switch").value = "Black and White photos"
+		if ($("#portfolio-switch").text() === "Color Photos") {
+			$("#portfolio-switch").text("Black and White photos")
 		} else {
-			$("#portfolio-switch").value = "Color Photos"
+			$("#portfolio-switch").text("Color Photos")
 		}
 	});
 
