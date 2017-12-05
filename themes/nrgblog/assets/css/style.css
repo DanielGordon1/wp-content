@@ -225,8 +225,8 @@ header .nav-container{z-index: 9 !important;}
 .header.style-2 header .top-line { float: left; margin-right: 49px; }
 .header.style-2 header .logo { display: inline-block; margin-top: 37px; }
 .header.style-2.style-3 header .logo{margin-top: 49px;}
-.header.style-2 header .main-nav { margin-top: 33px; }
-.header.style-2.style-3 header .main-nav{margin-top: 49px;}
+.header.style-2 header .main-nav { margin-top: 20px; }
+/*.header.style-2.style-3 header .main-nav{margin-top: 49px;}*/
 
 .header.style-2 header .main-nav li, .header.style-2 header .sub-nav li { float: left; list-style: none; line-height: 30px; position: relative;}
 .header.style-2 header .main-nav a, .header.style-2 header .sub-nav a { font-size: 11px; line-height: 22px; font-weight: 400; color: #bababa; text-transform: uppercase; margin-right: 15px; }
@@ -278,7 +278,7 @@ header .nav-container{z-index: 9 !important;}
     .header.style-3 header{background:#fff; top:0;}
     .header.style-3{background: #f9f9f9;}
     /*header style-3*/
-    .header.style-3 header .sub-nav{display: none; position: absolute; top: 72px;}
+    .header.style-3 header .sub-nav{display: none; position: absolute; top: 42px;}
     .header.style-3 header .sub-nav li{display: block; float: none;background: #f9f9f9; padding: 5px 15px;}
     .header.style-3 header .small-menu-btn {position: absolute;top: 50%; left:0;right:auto; -webkit-transform: translateY(50%);
         -o-transform: translateY(50%);
@@ -1879,7 +1879,7 @@ transition: all ease-out 0.3s;}
     top: 31px;
     right: 15px;}
 }
-.contact.page-title{margin-bottom: 70px;}
+/*.contact.page-title{margin-bottom: 70px;}*/
 img.contact {margin-bottom: 42px;}
 .contact.title-w{margin-bottom: 29px;}
 @media screen and (max-width: 991px){

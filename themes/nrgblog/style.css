@@ -212,16 +212,19 @@ a img.aligncenter {
 }
 
 .header.style-2.style-3 header {
-    height: 100px !important;
+    height: 60px !important;
 }
 
 .header.style-2.style-3 header .logo {
+  display: none;
   margin-top: 0px !important;
 }
 .header.style-2 header .logo {
+  display: none;
   margin-top: 0px !important;
 }
 .header.style-3 header .top-line .logo img {
+  display: none;
   max-width: 100px !important;
   border-radius:50%;
 }
@@ -237,3 +240,24 @@ a img.aligncenter {
   display: none;
 }
 
+#contact img {
+  margin: auto;
+  height: 400px;
+}
+
+#contact-form .comments .title {
+  line-height: 17px;
+}
+
+#portfolio-title, #contact-title, #about_me-title, #faq-title, #ontwerpen-title, #prijsindicatie-title, #voorwaarden-title, #verzorging-title {
+  padding-bottom: 50px;
+}
+
+#faq-list p a {
+  line-height: 50px;
+  color: black;
+}
+
+#faq-picture img {
+  height: 480px;
+}
